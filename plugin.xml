@@ -14,8 +14,11 @@
 		<config-file parent="/*" target="AndroidManifest.xml" />
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.sarriaroman.PhotoViewer.PhotoActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
-        </config-file>
+		<!--Aigens modify-->
+		<!--<activity android:name="com.sarriaroman.PhotoViewer.PhotoActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />-->
+            <activity android:name="com.sarriaroman.PhotoViewer.PhotoActivity" android:theme="@style/PhotoViewer.leftRight" />
+        <!--Aigens modify-->
+		</config-file>
 
 		<config-file parent="/manifest" target="AndroidManifest.xml">
 			<uses-permission android:name="android.permission.INTERNET" />
@@ -27,6 +30,15 @@
 		<source-file src="src/android/PhotoActivity.java" target-dir="src/com/sarriaroman/PhotoViewer" />
 
 		<source-file src="src/android/layout/activity_photo.xml" target-dir="res/layout" />
+
+		<!--Aigens modify-->
+		<source-file src="src/android/hml/anim/bottom_up.xml" target-dir="res/anim" />
+		<source-file src="src/android/hml/anim/left_in.xml" target-dir="res/anim" />
+		<source-file src="src/android/hml/anim/left_out.xml" target-dir="res/anim" />
+		<source-file src="src/android/hml/anim/right_in.xml" target-dir="res/anim" />
+		<source-file src="src/android/hml/values/activity_fade_in_out.xml" target-dir="res/values" />
+		<source-file src="src/android/hml/values/theme.xml" target-dir="res/values" />
+		<!--Aigens modify-->
 
 		<framework src="src/android/photoviewer.gradle" custom="true" type="gradleReference" />
 	</platform>

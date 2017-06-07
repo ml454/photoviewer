@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="activity_fade_in_out" parent="android:Animation.Activity" >
+      <!--<item name="@android:windowEnterAnimation">@anim/right_in</item>
+      <item name="@android:windowExitAnimation">@anim/left_out</item>-->
+
+        <item name="android:activityCloseExitAnimation">@anim/left_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_out</item>
+        <item name="android:activityOpenExitAnimation">@anim/bottom_up</item>
+        <item name="android:activityOpenEnterAnimation">@anim/bottom_up</item>
+    </style>
+</resources>

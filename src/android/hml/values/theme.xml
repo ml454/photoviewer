@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PhotoViewer.leftRight" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/activity_fade_in_out</item>
+    </style>
+    
+</resources>
